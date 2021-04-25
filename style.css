@@ -1,0 +1,14 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+#main {
+  margin: 30px 10px;
+  background: #cad1c5;
+  height: 100%;
+  border-top-left-radius: 10px 2px;
+  border-top-right-radius: 10px 4px;
+}
