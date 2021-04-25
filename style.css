@@ -2,7 +2,8 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #9d787f;
 }
 
 #main {
@@ -11,4 +12,61 @@ html {
   height: 100%;
   border-top-left-radius: 10px 2px;
   border-top-right-radius: 10px 4px;
+}
+
+#title {
+  font-size: 4rem;
+  margin-bottom: 0;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: 300;
+  text-align: center;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin: 0px 50px;
+}
+
+#img-div img {
+  max-width: 100%;
+  padding-top: 20px;
+}
+
+#img-caption {
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+
+.title-cronologia {
+  text-align: center;
+  margin: 20px 0px 5px 0px;
+}
+
+.subtitle-cronologia {
+  text-align: center;
+  font-weight: 300;
+  margin: 0px 0px 20px 0px;
+}
+
+ul {
+  display: block;
+  margin: 0 200px;
+}
+
+ul li{
+  padding: 10px 0px;
+}
+
+.cronologia {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: justify;
 }
