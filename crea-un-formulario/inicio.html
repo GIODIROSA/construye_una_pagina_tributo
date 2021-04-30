@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Crea un formulario</title>
   </head>
   <body>
@@ -16,13 +17,173 @@
 
       <form id="survey-form" action="">
         <label id="name-label" for="name">Nombre</label>
-        <input name="name" id="name" type="text" placeholder="Escribe tu nombre" />
+        <input
+          name="name"
+          id="name"
+          type="text"
+          placeholder="Escribe tu nombre"
+        />
 
-        <label id="number-label" for="number>Teléfono</label>
-        <input name="number" id="number" type="text" placeholder="Escribe tu teléfono celular" />
+        <label id="apellido-label" for="apellido">Apellido</label>
+        <input
+          name="apellido"
+          id="apellido"
+          type="text"
+          placeholder="Escribe tu Apellido"
+        />
 
-        <label for=""></label>
+        <label id="celular-label" for="celular">Teléfono</label>
+        <input
+          name="celular"
+          id="celular"
+          type="text"
+          placeholder="Escribe tu teléfono celular"
+        />
+
+        <label id="email-label" for="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="text"
+          placeholder="Escribe tu email"
+        />
+
+        <div class="form-group">
+          <label id="number-label" for="number">Año del Vehículo</label>
+          <input
+            id="number"
+            class="form-control"
+            min="2012"
+            max="2020"
+            name="age"
+            type="number"
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="kilometraje-label" for="number">Kilometraje</label>
+          <input
+            id="kilometraje"
+            class="form-control"
+            min="10000"
+            max="40000"
+            name="kilometraje"
+            type="number"
+          />
+        </div>
+
+        <div class="contenedor-mantencion">
+          <p>Seleccione la Mantención del Vehículo</p>
+
+          <select name="mantencion" id="mantencion">
+            <option disabled value="" required="">
+              ¿Tienes las mantenciones de tu auto al día?
+            </option>
+            <option value="1">Sí, realizadas en Servicio de la marca</option>
+            <option value="2">
+              Sí, pero no realizadas en Servicio de la marca
+            </option>
+            <option value="3">No, me faltan algunas</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Selecciona la cantidad de dueño que ha tenido el vehículo</p>
+
+          <select class="form-control" name="role" id="dropdown" required>
+            <option disabled select="" value="">Numero de dueños</option>
+            <option value="un-propietario">Un Propietario</option>
+            <option value="dos-propietario">Dos Propietario</option>
+            <option value="tres-propietario">Tres Propietario</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Selecciona la Sucursal que quieres la compra del vehículo</p>
+
+          <label>
+            <input
+              type="radio"
+              value="la-serena"
+              class="input-radio"
+              name="surcusales"
+              checked=""
+            />
+            La Serena
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              value="enea"
+              class="input-radio"
+              name="surcusales"
+              checked=""
+            />
+            Santiago -Enea
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              value="lo-angeles"
+              class="input-radio"
+              name="surcusales"
+              checked=""
+            />
+            Los Angeles
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Selecciona el numero de llaves</p>
+
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="prefer"
+              value="una-sola"
+            />
+            Una sola
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="prefer"
+              value="Dos-llaves"
+            />
+            Dos llaves
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              name="prefer"
+              value="tres-llaves"
+            />
+            tres llaves
+          </label>
+        </div>
+
+        <div class="from-group">
+          <p>Algún comentario o sugerencia</p>
+          <textarea
+            name="commet"
+            id="comments"
+            cols="30"
+            rows="10"
+            placeholder="Observaciones y detalles"
+          ></textarea>
+        </div>
+
+        <button type="submit" id="submit" class="submit-button">Enviar</button>
       </form>
     </main>
+
+    <script src="formulario.js"></script>
   </body>
 </html>
