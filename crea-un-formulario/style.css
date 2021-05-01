@@ -3,8 +3,19 @@ html {
   padding: 0px;
   box-sizing: border-box;
   background: #ffc98b;
+
   font-family: "Roboto", sans-serif;
   color: #d0637c;
+}
+
+body {
+  background-color: #e5e5f7;
+  opacity: 0.4;
+  background-image: radial-gradient(#ffb284 1px, #e5e5f7 1px);
+  background-size: 20px 20px;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
 }
 
 .contenedor-titulo {
@@ -13,6 +24,7 @@ html {
   justify-content: center;
   align-items: center;
   margin: 20px 0px;
+  padding: 10px 0px;
 }
 
 #title {
@@ -30,8 +42,13 @@ html {
   background: #ffb284;
   border-radius: 5px;
   height: 100%;
-  width: 60%;
+  width: 50%;
   margin: 30px auto;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(231, 151, 150, 0);
+  box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(231, 151, 150, 0);
+  z-index: -1;
 }
 
 .form-nombreApellido {
@@ -76,13 +93,11 @@ label {
   border-radius: 5px;
   background-color: #c6c09c;
   color: #d0637c;
-  box-shadow: ;
 }
 
-.submit-button:hover{
+.submit-button:hover {
   background-color: #d0637c;
   color: #c6c09c;
-
 }
 
 .contenedor-Enviar {
@@ -90,4 +105,24 @@ label {
   justify-content: center;
   align-items: center;
   padding: 20px 0px;
+}
+
+input {
+  text-indent: 10px;
+}
+
+textarea {
+  text-indent: 10px;
+}
+
+
+@media only screen and (min-width: 350px) and (max-width: 960px){
+
+  #formulario {
+   
+    /* height: 100%; */
+    width: 80%;
+   
+  }
+
 }
