@@ -3,6 +3,8 @@ html {
   padding: 0px;
   box-sizing: border-box;
   background: #ffc98b;
+  font-family: "Roboto", sans-serif;
+  color: #d0637c;
 }
 
 .contenedor-titulo {
@@ -10,6 +12,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px 0px;
 }
 
 #title {
@@ -18,4 +21,73 @@ html {
 
 #description {
   margin: 0px;
+}
+
+#formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffb284;
+  border-radius: 5px;
+  height: 100%;
+  width: 60%;
+  margin: 30px auto;
+}
+
+.form-nombreApellido {
+  margin: 20px auto 0rem auto;
+  padding: 0.25rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.nombre,
+.apellido,
+.celular,
+.email,
+.observaciones {
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.number,
+.kilometraje {
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px 0px;
+  width: 50%;
+}
+
+#mantencion,
+#dropdown {
+  width: 100%;
+}
+
+.submit-button {
+  border: 0px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #c6c09c;
+  color: #d0637c;
+  box-shadow: ;
+}
+
+.submit-button:hover{
+  background-color: #d0637c;
+  color: #c6c09c;
+
+}
+
+.contenedor-Enviar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
 }
