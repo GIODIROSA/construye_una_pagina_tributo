@@ -42,166 +42,177 @@
             />
           </div>
 
-          <label id="celular-label" for="celular">Teléfono</label>
-          <input
-            class="celular"
-            name="celular"
-            id="celular"
-            type="text"
-            placeholder="Escribe tu teléfono celular"
-          />
-
-          <label id="email-label" for="email">Email</label>
-          <input
-            class="email"
-            id="email"
-            name="email"
-            type="text"
-            placeholder="Escribe tu email"
-          />
-
-          <div class="form-group">
-            <label id="number-label" for="number">Año del Vehículo</label>
+          <div class="form-celular-email">
+            <label id="celular-label" for="celular">Teléfono</label>
             <input
-              id="number"
-              class="form-control number"
-              min="2012"
-              max="2020"
-              name="age"
-              type="number"
+              class="celular"
+              name="celular"
+              id="celular"
+              type="text"
+              placeholder="Escribe tu teléfono celular"
+            />
+
+            <label id="email-label" for="email">Email</label>
+            <input
+              class="email"
+              id="email"
+              name="email"
+              type="text"
+              placeholder="Escribe tu email"
+              required
             />
           </div>
 
-          <div class="form-group">
-            <label id="kilometraje-label" for="number">Kilometraje</label>
-            <input
-              id="kilometraje"
-              class="form-control kilometraje"
-              min="10000"
-              max="40000"
-              name="kilometraje"
-              type="number"
-            />
+          <div class="form-number-kilometraje">
+            <div class="form-group">
+              <label id="number-label" for="number">Año del Vehículo</label>
+              <input
+                id="number"
+                class="form-control number"
+                min="2012"
+                max="2020"
+                name="age"
+                type="number"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label id="kilometraje-label" for="number">Kilometraje</label>
+              <input
+                id="kilometraje"
+                class="form-control kilometraje"
+                min="10000"
+                max="40000"
+                name="kilometraje"
+                type="number"
+                required
+              />
+            </div>
           </div>
 
-          <div class="contenedor-mantencion">
-            <p>Seleccione la Mantención del Vehículo</p>
+          <div class="form-mantencion-duenno">
+            <div class="contenedor-mantencion">
+              <p>Seleccione la Mantención del Vehículo</p>
 
-            <select name="mantencion" id="mantencion">
-              <option disabled value="" required="">
-                ¿Tienes las mantenciones de tu auto al día?
-              </option>
-              <option value="1">Sí, realizadas en Servicio de la marca</option>
-              <option value="2">
-                Sí, pero no realizadas en Servicio de la marca
-              </option>
-              <option value="3">No, me faltan algunas</option>
-            </select>
+              <select name="mantencion" id="mantencion">
+                <option disabled value="" required="">
+                  ¿Tienes las mantenciones de tu auto al día?
+                </option>
+                <option value="1">
+                  Sí, realizadas en Servicio de la marca
+                </option>
+                <option value="2">
+                  Sí, pero no realizadas en Servicio de la marca
+                </option>
+                <option value="3">No, me faltan algunas</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <p>Selecciona la cantidad de dueño que ha tenido el vehículo</p>
+
+              <select class="form-control" name="role" id="dropdown" required>
+                <option disabled select="" value="">Numero de dueños</option>
+                <option value="un-propietario">Un Propietario</option>
+                <option value="dos-propietario">Dos Propietario</option>
+                <option value="tres-propietario">Tres Propietario</option>
+              </select>
+            </div>
           </div>
 
-          <div class="form-group">
-            <p>Selecciona la cantidad de dueño que ha tenido el vehículo</p>
+          <div class="form-sucursales-llaves">
+            <div class="form-group">
+              <p>Selecciona la Sucursal que quieres la compra del vehículo</p>
 
-            <select class="form-control" name="role" id="dropdown" required>
-              <option disabled select="" value="">Numero de dueños</option>
-              <option value="un-propietario">Un Propietario</option>
-              <option value="dos-propietario">Dos Propietario</option>
-              <option value="tres-propietario">Tres Propietario</option>
-            </select>
+              <label>
+                <input
+                  type="radio"
+                  value="la-serena"
+                  class="input-radio"
+                  name="surcusales"
+                  checked=""
+                />
+                La Serena
+              </label>
+
+              <label>
+                <input
+                  type="radio"
+                  value="enea"
+                  class="input-radio"
+                  name="surcusales"
+                  checked=""
+                />
+                Santiago -Enea
+              </label>
+
+              <label>
+                <input
+                  type="radio"
+                  value="lo-angeles"
+                  class="input-radio"
+                  name="surcusales"
+                  checked=""
+                />
+                Los Angeles
+              </label>
+            </div>
+
+            <div class="form-group">
+              <p>Selecciona el número de llaves</p>
+
+              <label>
+                <input
+                  type="checkbox"
+                  class="input-checkbox"
+                  name="prefer"
+                  value="una-sola"
+                />
+                Una sola
+              </label>
+
+              <label>
+                <input
+                  type="checkbox"
+                  class="input-checkbox"
+                  name="prefer"
+                  value="Dos-llaves"
+                />
+                Dos llaves
+              </label>
+
+              <label>
+                <input
+                  type="checkbox"
+                  class="input-checkbox"
+                  name="prefer"
+                  value="tres-llaves"
+                />
+                tres llaves
+              </label>
+            </div>
           </div>
 
-          <div class="form-group">
-            <p>Selecciona la Sucursal que quieres la compra del vehículo</p>
-
-            <label>
-              <input
-                type="radio"
-                value="la-serena"
-                class="input-radio"
-                name="surcusales"
-                checked=""
-              />
-              La Serena
-            </label>
-
-            <label>
-              <input
-                type="radio"
-                value="enea"
-                class="input-radio"
-                name="surcusales"
-                checked=""
-              />
-              Santiago -Enea
-            </label>
-
-            <label>
-              <input
-                type="radio"
-                value="lo-angeles"
-                class="input-radio"
-                name="surcusales"
-                checked=""
-              />
-              Los Angeles
-            </label>
-          </div>
-
-          <div class="form-group">
-            <p>Selecciona el número de llaves</p>
-
-            <label>
-              <input
-                type="checkbox"
-                class="input-checkbox"
-                name="prefer"
-                value="una-sola"
-              />
-              Una sola
-            </label>
-
-            <label>
-              <input
-                type="checkbox"
-                class="input-checkbox"
-                name="prefer"
-                value="Dos-llaves"
-              />
-              Dos llaves
-            </label>
-
-            <label>
-              <input
-                type="checkbox"
-                class="input-checkbox"
-                name="prefer"
-                value="tres-llaves"
-              />
-              tres llaves
-            </label>
-          </div>
-
-          <div class="from-group">
-            <p>Algún comentario o sugerencia</p>
-            <textarea
-              class="observaciones"
-              name="commet"
-              id="comments"
-              cols="30"
-              rows="10"
-              placeholder="Observaciones y detalles"
-            ></textarea>
+          <div class="form-observaciones">
+            <div class="from-group">
+              <p>Algún comentario o sugerencia</p>
+              <textarea
+                class="observaciones"
+                name="commet"
+                id="comments"
+                cols="30"
+                rows="10"
+                placeholder="Observaciones y detalles"
+              ></textarea>
+            </div>
           </div>
 
           <div class="contenedor-Enviar">
-
             <button type="submit" id="submit" class="submit-button">
               Enviar
             </button>
-
           </div>
-
-          
         </form>
       </section>
     </main>

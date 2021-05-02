@@ -18,6 +18,10 @@ body {
   padding: 0px;
 }
 
+#formulario-SolicitudCompra{
+  height: auto;
+}
+
 .contenedor-titulo {
   display: flex;
   flex-direction: column;
@@ -115,14 +119,17 @@ textarea {
   text-indent: 10px;
 }
 
-
-@media only screen and (min-width: 350px) and (max-width: 960px){
-
+@media only screen and (min-width: 350px) and (max-width: 960px) {
   #formulario {
-   
-    /* height: 100%; */
     width: 80%;
-   
   }
 
+  .form-nombreApellido,
+  .form-celular-email,
+  .form-number-kilometraje,
+  .form-mantencion-duenno,
+  .form-observaciones,
+  .form-sucursales-llaves {
+    margin: auto 20px;
+  }
 }
