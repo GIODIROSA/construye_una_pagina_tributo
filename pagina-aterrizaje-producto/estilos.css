@@ -1,0 +1,56 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 50px;
+}
+
+#header-img {
+  width: 50px;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+ul li {
+  display: inline;
+  list-style: none;
+  padding: 0px 20px;
+}
+
+.categoria {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contenedor-video,
+.contenedor-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-caracteristicas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icono {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.icono-lab {
+  margin: 20px 0px;
+}
