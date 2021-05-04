@@ -1,7 +1,10 @@
-html {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #015c92;
+
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 #header {
@@ -13,6 +16,7 @@ html {
 
 #header-img {
   width: 50px;
+  padding: 20px;
 }
 
 .nav-link {
@@ -22,7 +26,7 @@ html {
 ul li {
   display: inline;
   list-style: none;
-  padding: 0px 20px;
+  padding: 0px 0px 0px 50px;
 }
 
 .categoria {
@@ -31,14 +35,46 @@ ul li {
   align-items: center;
 }
 
-.contenedor-video,
 .contenedor-form {
+  margin: 50px 0px;
+}
+
+#submit {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+#submit:hover {
+  background-color: #53a7d8;
+  transition: background-color 1s;
+  color: white;
+}
+
+.contenedor-video {
+  margin: 50px 0px;
+}
+
+.contenedor-video,
+.contenedor-form,
+.contenedor-btnEnviar,
+.contenedor-input {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contenedor-caracteristicas {
+.contenedor-input input {
+  width: 100%;
+}
+
+.contenedor-btnEnviar {
+  padding: 20px 0px;
+  margin: 20px 0px;
+}
+
+.contenedor-caracteristicas,
+.contenedor-card {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -53,4 +89,91 @@ ul li {
 
 .icono-lab {
   margin: 20px 0px;
+}
+
+#card-servicios {
+  margin: 50px 20px;
+}
+
+.card-01,
+.card-02,
+.card-03 {
+  height: 350px;
+  border: 2px solid #bce6ff;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.14);
+  border-radius: 5px;
+}
+
+.contenido-servicio {
+  width: 350px;
+  height: 80px;
+ 
+  text-align: justify;
+  margin: 0px 30px;
+  padding-top: 15px;
+}
+
+.titulo-card {
+  background-color: #88cdf6;
+  color: white;
+  padding: 20px 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.contenedo-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.btn-activar {
+  border: none;
+  background-color: silver;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.icono {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#footer-service {
+  background: #bce6ff;
+  margin: 0px;
+  padding: 0px;
+  height: 150px;
+  width: 100%;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 50px;
+  padding-right: 20px;
+}
+
+.derecho-autor {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+}
+
+.contenedor-contenido_derecho {
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+  padding: 50px 0px;
 }
