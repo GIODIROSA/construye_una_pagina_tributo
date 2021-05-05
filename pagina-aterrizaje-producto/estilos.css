@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #015c92;
+  background-color: #edeef3;
 
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -21,6 +22,12 @@ body {
 
 .nav-link {
   text-decoration: none;
+  color: #015c92;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: #d0637c;
 }
 
 ul li {
@@ -43,6 +50,7 @@ ul li {
   padding: 10px 30px;
   border-radius: 5px;
   border: none;
+  background: #bce6ff;
 }
 
 #submit:hover {
@@ -73,6 +81,10 @@ ul li {
   margin: 20px 0px;
 }
 
+.contenedor-caracteristicas {
+  margin: 0px 150px;
+}
+
 .contenedor-caracteristicas,
 .contenedor-card {
   display: flex;
@@ -94,6 +106,8 @@ ul li {
 #card-servicios {
   margin: 50px 20px;
 }
+
+
 
 .card-01,
 .card-02,
@@ -139,7 +153,11 @@ ul li {
 
 .icono {
   text-align: center;
-  padding: 20px 0px;
+  padding: 20px 150px;
+}
+
+.icono-lab {
+  color: #53a7d8;
 }
 
 #footer-service {
@@ -178,21 +196,42 @@ footer ul {
   padding: 50px 0px;
 }
 
+hr {
+  background-color: #88cdf6;
+  height: 2px;
+  border: none;
+}
+
+.modificacion-title {
+  color: #53a7d8;
+}
+
+.btn-activar {
+  color: #015c92;
+  background: #bce6ff;
+}
+
+.btn-activar:hover {
+  color: white;
+  background: #d0637c;
+  transition: 2s;
+}
+
 @media only screen and (min-width: 350px) and (max-width: 960px) {
   #header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
 
-  .nav-link{
+  .nav-link {
     font-size: 20px;
-    color: black;
+    color: #015c92;
   }
 
-  .menu{
+
+  .menu {
     padding: 0px;
   }
 
@@ -204,5 +243,58 @@ footer ul {
     display: block;
     list-style: none;
     padding: 0px;
+  }
+
+  .titulo {
+    margin: 30px 20px;
+    text-align: center;
+  }
+
+  .contenedor-input {
+    margin: 10px 30px;
+  }
+
+  .contenedor-caracteristicas {
+    margin: 0px 20px;
+  }
+
+  .contenido-icono {
+    margin: 0px 20px;
+  }
+
+  .titulo-contenido {
+    margin: 0px;
+  }
+
+  #features {
+    margin: 0px 20px;
+  }
+
+  .icono {
+    padding: 0px;
+  }
+
+  hr {
+    background-color: #88cdf6;
+    height: 5px;
+    border: none;
+  }
+
+  iframe {
+    width: 350px;
+    height: 215 px;
+  }
+
+  .contenedor-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-01,
+  .card-02,
+  .card-03 {
+    margin-top: 30px;
   }
 }
