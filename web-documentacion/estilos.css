@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #292643;
+}
+
+#navbar{
+    position: fixed;
+    min-width: 290px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 300px;
+    background: #e99e75;
+}
+
+#main-doc{
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
