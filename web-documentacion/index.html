@@ -49,73 +49,161 @@
     </nav>
 
     <main id="main-doc">
-      <section id="Installation" class="main-section">
+      <section id="Installation_laravel" class="main-section">
         <header class="title">Installation</header>
-        <h3># Meet Laravel</h3>
-        <p class="contenido">
-          Laravel is a web application framework with expressive, elegant
-          syntax. A web framework provides a structure and starting point for
-          creating your application, allowing you to focus on creating something
-          amazing while we sweat the details.
-        </p>
+        <article>
+          <h3># Meet Laravel</h3>
+          <p class="contenido">
+            Laravel is a web application framework with expressive, elegant
+            syntax. A web framework provides a structure and starting point for
+            creating your application, allowing you to focus on creating
+            something amazing while we sweat the details.
+          </p>
 
-        <p class="contenido">
-          Laravel strives to provide an amazing developer experience, while
-          providing powerful features such as thorough dependency injection, an
-          expressive database abstraction layer, queues and scheduled jobs, unit
-          and integration testing, and more.
-        </p>
+          <p class="contenido">
+            Laravel strives to provide an amazing developer experience, while
+            providing powerful features such as thorough dependency injection,
+            an expressive database abstraction layer, queues and scheduled jobs,
+            unit and integration testing, and more.
+          </p>
 
-        <p class="contenido">
-          Whether you are new to PHP or web frameworks or have years of
-          experience, Laravel is a framework that can grow with you. We'll help
-          you take your first steps as a web developer or give you a boost as
-          you take your expertise to the next level. We can't wait to see what
-          you build.
-        </p>
+          <p class="contenido">
+            Whether you are new to PHP or web frameworks or have years of
+            experience, Laravel is a framework that can grow with you. We'll
+            help you take your first steps as a web developer or give you a
+            boost as you take your expertise to the next level. We can't wait to
+            see what you build.
+          </p>
 
-        <h3># Why Laravel?</h3>
+          <h3># Why Laravel?</h3>
 
-        <p class="contenido">
-          There are a variety of tools and frameworks available to you when
-          building a web application. However, we believe Laravel is the best
-          choice for building modern, full-stack web applications.
-        </p>
+          <p class="contenido">
+            There are a variety of tools and frameworks available to you when
+            building a web application. However, we believe Laravel is the best
+            choice for building modern, full-stack web applications.
+          </p>
 
-        <h5>A Progressive Framework</h5>
+          <h5>A Progressive Framework</h5>
 
-        <p class="contenido">
-          We like to call Laravel a "progressive" framework. By that, we mean
-          that Laravel grows with you. If you're just taking your first steps
-          into web development, Laravel's vast library of documentation, guides,
-          and video tutorials will help you learn the ropes without becoming
-          overwhelmed.
-        </p>
+          <p class="contenido">
+            We like to call Laravel a "progressive" framework. By that, we mean
+            that Laravel grows with you. If you're just taking your first steps
+            into web development, Laravel's vast library of documentation,
+            guides, and video tutorials will help you learn the ropes without
+            becoming overwhelmed.
+          </p>
 
-        <p class="contenido">
-          If you're a senior developer, Laravel gives you robust tools for
-          dependency injection, unit testing, queues, real-time events, and
-          more. Laravel is fine-tuned for building professional web applications
-          and ready to handle enterprise work loads.
-        </p>
+          <p class="contenido">
+            If you're a senior developer, Laravel gives you robust tools for
+            dependency injection, unit testing, queues, real-time events, and
+            more. Laravel is fine-tuned for building professional web
+            applications and ready to handle enterprise work loads.
+          </p>
+
+          <h5>Getting Started On macOS</h5>
+
+          <p class="contenido">
+            If you're developing on a Mac and Docker Desktop is already
+            installed, you can use a simple terminal command to create a new
+            Laravel project. For example, to create a new Laravel application in
+            a directory named "example-app", you may run the following command
+            in your terminal:
+          </p>
+
+          <code> curl -s "https://laravel.build/example-app" | bash </code>
+
+          <p class="contenido">
+            Of course, you can change "example-app" in this URL to anything you
+            like. The Laravel application's directory will be created within the
+            directory you execute the command from.
+          </p>
+
+          <p class="contenido">
+            After the project has been created, you can navigate to the
+            application directory and start Laravel Sail. Laravel Sail provides
+            a simple command-line interface for interacting with Laravel's
+            default Docker configuration:
+          </p>
+
+          <code>
+            cd example-app <br />
+            ./vendor/bin/sail up
+          </code>
+
+          <p class="contenido">
+            The first time you run the Sail up command, Sail's application
+            containers will be built on your machine. This could take several
+            minutes. Don't worry, subsequent attempts to start Sail will be much
+            faster.
+          </p>
+
+          <p class="contenido">
+            Once the application's Docker containers have been started, you can
+            access the application in your web browser at: http://localhost.
+          </p>
+        </article>
       </section>
 
-      <hr>
+      <hr />
 
-      <section id="configuration" class="main-section">
+      <section id="configuration_laravel" class="main-section">
         <header class="title">Configuration</header>
-        <h3># Introduction</h3>
-        <p class="contenido">
-          All of the configuration files for the Laravel framework are stored in
-          the config directory. Each option is documented, so feel free to look
-          through the files and get familiar with the options available to you.
-        </p>
-        <p class="contenido">
-          These configuration files allow you to configure things like your
-          database connection information, your mail server information, as well
-          as various other core configuration values such as your application
-          timezone and encryption key.
-        </p>
+        <article>
+          <h3># Introduction</h3>
+          <p class="contenido">
+            All of the configuration files for the Laravel framework are stored
+            in the config directory. Each option is documented, so feel free to
+            look through the files and get familiar with the options available
+            to you.
+          </p>
+          <p class="contenido">
+            These configuration files allow you to configure things like your
+            database connection information, your mail server information, as
+            well as various other core configuration values such as your
+            application timezone and encryption key.
+          </p>
+
+          <h3># Environment Configuration</h3>
+
+          <p class="contenido">
+            It is often helpful to have different configuration values based on
+            the environment where the application is running. For example, you
+            may wish to use a different cache driver locally than you do on your
+            production server.
+          </p>
+
+          <p class="contenido">
+            To make this a cinch, Laravel utilizes the DotEnv PHP library. In a
+            fresh Laravel installation, the root directory of your application
+            will contain a .env.example file that defines many common
+            environment variables. During the Laravel installation process, this
+            file will automatically be copied to .env.
+          </p>
+        </article>
+      </section>
+
+      <hr />
+
+      <section id="directory_structure_laravel" class="main-section">
+        <header class="title">Directory Structure</header>
+        <article>
+          <h3># The Root Directory</h3>
+          <p class="contenido">
+            The app directory contains the core code of your application. We'll
+            explore this directory in more detail soon; however, almost all of
+            the classes in your application will be in this directory.
+          </p>
+
+          <h5>The Bootstrap Directory</h5>
+
+          <p class="contenido">
+            The bootstrap directory contains the app.php file which bootstraps
+            the framework. This directory also houses a cache directory which
+            contains framework generated files for performance optimization such
+            as the route and services cache files. You should not typically need
+            to modify any files within this directory.
+          </p>
+        </article>
       </section>
     </main>
   </body>
