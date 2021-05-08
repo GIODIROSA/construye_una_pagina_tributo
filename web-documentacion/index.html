@@ -31,19 +31,34 @@
       <hr />
       <ul class="sub-menu">
         <li>
-          <p>Installation</p>
+          <a href="#Installation_laravel" class="nav-link">
+            <p>Installation</p>
+          </a>
         </li>
         <li>
-          <p>Configuration</p>
+          <a href="#configuration_laravel" class="nav-link">
+            <p>Configuration</p>
+          </a>
         </li>
         <li>
-          <p>Directory Structure</p>
+          <a href="#directory_structure_laravel" class="nav-link">
+            <p>Directory Structure</p>
+          </a>
         </li>
         <li>
-          <p>Starte Kids</p>
+          <a href="#Starte_Kids" class="nav-link">
+            <p>Starte Kids</p>
+          </a>
         </li>
         <li>
-          <p>Starte Kids</p>
+          <a href="#Deployment" class="nav-link">
+            <p>Deployment</p>
+          </a>
+        </li>
+        <li>
+          <a href="#Routing_laravel" class="nav-link">
+            <p>Routing</p>
+          </a>
         </li>
       </ul>
     </nav>
@@ -179,6 +194,19 @@
             environment variables. During the Laravel installation process, this
             file will automatically be copied to .env.
           </p>
+
+          <h5>Available Router Methods</h5>
+
+          <p class="contenido">
+            The router allows you to register routes that respond to any HTTP
+            verb:
+          </p>
+
+          <code>
+            Route::get($uri, $callback); <br />
+            Route::post($uri, $callback); Route::put($uri, $callback); <br />
+            Route::patch($uri, $callback); Route::delete($uri, $callback);
+          </code>
         </article>
       </section>
 
@@ -203,6 +231,192 @@
             as the route and services cache files. You should not typically need
             to modify any files within this directory.
           </p>
+
+          <h5># The App Directory</h5>
+
+          <ul class="lista_directory_structure">
+            <li class="section_directory">The Broadcasting Directory</li>
+            <li class="section_directory">The Console Directory</li>
+            <li class="section_directory">The Events Directory</li>
+            <li class="section_directory">The Exceptions Directory</li>
+            <li class="section_directory">The Http Directory</li>
+            <li class="section_directory">The Jobs Directory</li>
+            <li class="section_directory">The Listeners Directory</li>
+            <li class="section_directory">The Mail Directory</li>
+            <li class="section_directory">The Models Directory</li>
+            <li class="section_directory">The Notifications Directory</li>
+            <li class="section_directory">The Policies Directory</li>
+            <li class="section_directory">The Providers Directory</li>
+            <li class="section_directory">The Rules Directory</li>
+          </ul>
+        </article>
+      </section>
+
+      <hr />
+
+      <section id="Starte_Kids" class="main-section">
+        <header class="title">Starte Kids</header>
+        <article>
+          <h3>Laravel Breeze</h3>
+          <p class="contenido">
+            Laravel Breeze is a minimal, simple implementation of all of
+            Laravel's authentication features, including login, registration,
+            password reset, email verification, and password confirmation.
+            Laravel Breeze's default view layer is made up of simple Blade
+            templates styled with Tailwind CSS. Breeze provides a wonderful
+            starting point for beginning a fresh Laravel application.
+          </p>
+
+          <h5># Installation</h5>
+
+          <p class="contenido">
+            First, you should create a new Laravel application, configure your
+            database, and run your database migrations:
+          </p>
+
+          <code>
+            curl -s https://laravel.build/example-app | bash <br />
+            cd example-app <br />
+            php artisan migrate
+          </code>
+
+          <p class="contenido">
+            Once you have created a new Laravel application, you may install
+            Laravel Breeze using Composer:
+          </p>
+
+          <code> composer require laravel/breeze --dev </code>
+
+          <p class="contenido">
+            After Composer has installed the Laravel Breeze package, you may run
+            the breeze:install Artisan command. This command publishes the
+            authentication views, routes, controllers, and other resources to
+            your application. Laravel Breeze publishes all of its code to your
+            application so that you have full control and visibility over its
+            features and implementation. After Breeze is installed, you should
+            also compile your assets so that your application's CSS file is
+            available:
+          </p>
+
+          <code>
+            php artisan breeze:install <br />
+            npm install <br />
+            npm run dev <br />
+            php artisan migrate
+          </code>
+
+          <p class="contenido">
+            Next, you may navigate to your application's /login or /register
+            URLs in your web browser. All of Breeze's routes are defined within
+            the routes/auth.php file.
+          </p>
+        </article>
+      </section>
+
+      <section id="Deployment" class="main-section">
+        <header class="title">Deployment</header>
+        <article>
+          <h3>Server Requirements</h3>
+          <p class="contenido">
+            The Laravel framework has a few system requirements. You should
+            ensure that your web server has the following minimum PHP version
+            and extensions:
+          </p>
+
+          <ul class="a">
+            <li>PHP >= 7.3</li>
+            <li>BCMath PHP Extension</li>
+            <li>Ctype PHP Extension</li>
+            <li>Fileinfo PHP Extension</li>
+            <li>JSON PHP Extension</li>
+            <li>Mbstring PHP Extension</li>
+            <li>OpenSSL PHP Extension</li>
+            <li>PDO PHP Extension</li>
+            <li>Tokenizer PHP Extension</li>
+            <li>XML PHP Extension</li>
+          </ul>
+
+          <p class="contenido">
+            If you are deploying your application to a server that is running
+            Nginx, you may use the following configuration file as a starting
+            point for configuring your web server. Most likely, this file will
+            need to be customized depending on your server's configuration. If
+            you would like assistance in managing your server, consider using a
+            first-party Laravel server management and deployment service such as
+            Laravel Forge.
+          </p>
+
+          <p class="contenido">
+            Please ensure, like the configuration below, your web server directs
+            all requests to your application's public/index.php file. You should
+            never attempt to move the index.php file to your project's root, as
+            serving the application from the project root will expose many
+            sensitive configuration files to the public Internet:
+          </p>
+
+          <code>
+            server { listen 80; server_name example.com; root
+            /srv/example.com/public; add_header X-Frame-Options "SAMEORIGIN";
+            add_header X-Content-Type-Options "nosniff"; index index.php;
+            charset utf-8; location / { try_files $uri $uri/
+            /index.php?$query_string; } location = /favicon.ico { access_log
+            off; log_not_found off; } location = /robots.txt { access_log off;
+            log_not_found off; } error_page 404 /index.php; location ~ \.php$ {
+            fastcgi_pass unix:/var/run/php/php7.4-fpm.sock; fastcgi_param
+            SCRIPT_FILENAME $realpath_root$fastcgi_script_name; include
+            fastcgi_params; } location ~ /\.(?!well-known).* { deny all; } }
+          </code>
+
+          <h5># Autoloader Optimization</h5>
+          <p class="contenido">
+            When deploying to production, make sure that you are optimizing
+            Composer's class autoloader map so Composer can quickly find the
+            proper file to load for a given class:
+          </p>
+
+          <code> composer install --optimize-autoloader --no-dev </code>
+
+          <ul class="a">
+            <li class="section_Deployment">
+              use App\Contracts\DowntimeNotifier;
+            </li>
+            <li class="section_Deployment">
+              use App\Contracts\ServerProvider;
+            </li>
+            <li class="section_Deployment">
+              use App\Services\DigitalOceanServerProvider;
+            </li>
+            <li class="section_Deployment">
+              use App\Services\PingdomDowntimeNotifier;
+            </li>
+            <li class="section_Deployment">
+              use App\Services\ServerToolsProvider;
+            </li>
+            <li class="section_Deployment">
+              use Illuminate\Support\ServiceProvider;
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <hr>
+
+
+      <section id="Routing_laravel" class="main-section">
+        <header class="title">Routing</header>
+        <article>
+          <h5>Basic Routing</h5>
+          <p class="contenido">
+            The most basic Laravel routes accept a URI and a closure, providing
+            a very simple and expressive method of defining routes and behavior
+            without complicated routing configuration files:
+          </p>
+          <ul class="a">
+            <li class="section_routing">Middleware</li>
+            <li class="section_routing">Subdomain Routing</li>
+            <li class="section_routing">Route Prefixes</li>
+            <li class="section_routing">Route Name Prefixes</li>
+          </ul>
         </article>
       </section>
     </main>

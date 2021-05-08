@@ -15,6 +15,11 @@ body {
   background: #f7f7fb;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: #ff2d20;
+}
+
 #main-doc {
   position: absolute;
   margin-left: 310px;
@@ -68,4 +73,35 @@ code {
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
+}
+
+.section_directory {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.section_directory:nth-child(3) {
+  color: #ff2d20;
+  font-weight: 900;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+.section_Deployment,
+.section_routing {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+}
+
+.section_Deployment:nth-child(3),
+.section_routing:nth-child(3) {
+  font-weight: 900;
+  font-size: 16px;
+  color: #ff2d20;
 }
