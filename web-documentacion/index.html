@@ -22,46 +22,50 @@
     <title>Documentacion</title>
   </head>
   <body>
-    <nav id="navbar">
-      <header class="titulo">Laravel</header>
-      <ul class="menu">
-        <li>Prologue</li>
-        <li>Get Started</li>
-      </ul>
-      <hr />
-      <ul class="sub-menu">
-        <li>
-          <a href="#Installation_laravel" class="nav-link">
-            <p>Installation</p>
-          </a>
-        </li>
-        <li>
-          <a href="#configuration_laravel" class="nav-link">
-            <p>Configuration</p>
-          </a>
-        </li>
-        <li>
-          <a href="#directory_structure_laravel" class="nav-link">
-            <p>Directory Structure</p>
-          </a>
-        </li>
-        <li>
-          <a href="#Starte_Kids" class="nav-link">
-            <p>Starte Kids</p>
-          </a>
-        </li>
-        <li>
-          <a href="#Deployment" class="nav-link">
-            <p>Deployment</p>
-          </a>
-        </li>
-        <li>
-          <a href="#Routing_laravel" class="nav-link">
-            <p>Routing</p>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <section class="contenedor_navbar">
+      <nav id="navbar">
+        <header class="titulo">Laravel</header>
+        <section class="contenedor_menu">
+          <ul class="menu">
+            <li>Prologue</li>
+            <li>Get Started</li>
+          </ul>
+          <hr />
+          <ul class="sub-menu">
+            <li>
+              <a href="#Installation_laravel" class="nav-link">
+                <p>Installation</p>
+              </a>
+            </li>
+            <li>
+              <a href="#configuration_laravel" class="nav-link">
+                <p>Configuration</p>
+              </a>
+            </li>
+            <li>
+              <a href="#directory_structure_laravel" class="nav-link">
+                <p>Directory Structure</p>
+              </a>
+            </li>
+            <li>
+              <a href="#Starte_Kids" class="nav-link">
+                <p>Starte Kids</p>
+              </a>
+            </li>
+            <li>
+              <a href="#Deployment" class="nav-link">
+                <p>Deployment</p>
+              </a>
+            </li>
+            <li>
+              <a href="#Routing_laravel" class="nav-link">
+                <p>Routing</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </section>
 
     <main id="main-doc">
       <section id="Installation_laravel" class="main-section">
@@ -171,6 +175,7 @@
             look through the files and get familiar with the options available
             to you.
           </p>
+
           <p class="contenido">
             These configuration files allow you to configure things like your
             database connection information, your mail server information, as
@@ -207,6 +212,17 @@
             Route::post($uri, $callback); Route::put($uri, $callback); <br />
             Route::patch($uri, $callback); Route::delete($uri, $callback);
           </code>
+
+          <h5># Lifecycle Overview</h5>
+
+          <ul class="a">
+            <li class="section_configuration">First Steps</li>
+            <li class="section_configuration">Http/console kernels</li>
+            <li class="section_configuration">Service Providers</li>
+            <li class="section_configuration">Service Providers 2</li>
+            <li class="section_configuration">Routing</li>
+            <li class="section_configuration">Finiship Up</li>
+          </ul>
         </article>
       </section>
 
@@ -399,8 +415,7 @@
         </article>
       </section>
 
-      <hr>
-
+      <hr />
 
       <section id="Routing_laravel" class="main-section">
         <header class="title">Routing</header>

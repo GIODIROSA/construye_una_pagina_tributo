@@ -23,7 +23,7 @@ body {
 #main-doc {
   position: absolute;
   margin-left: 310px;
-  padding: 20px;
+  padding: 20px 50px;
   margin-bottom: 110px;
 }
 
@@ -93,15 +93,67 @@ ul.a {
 }
 
 .section_Deployment,
-.section_routing {
+.section_routing,
+.section_configuration {
   font-weight: 300;
   font-size: 16px;
   font-family: "Oswald", sans-serif;
 }
 
 .section_Deployment:nth-child(3),
-.section_routing:nth-child(3) {
+.section_routing:nth-child(3),
+.section_configuration:nth-child(3) {
   font-weight: 900;
   font-size: 16px;
   color: #ff2d20;
+}
+
+hr {
+  height: 2px;
+  background-color: #ff2d20;
+  border: none;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 960px) {
+  #navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    max-height: 475px;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-top: 475px;
+    margin-left: -10px;
+    padding: 0px 30px;
+  }
+
+  .contenedor_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .sub-menu {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .contenido{
+    margin: 5px;
+  }
+
+  code{
+    margin: 0;
+  }
 }
