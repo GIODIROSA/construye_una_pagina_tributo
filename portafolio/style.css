@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  background: #184d47;
+  font-family: "Rubik", sans-serif;
+}
+
+.nav-bar {
+  background: #c64756;
+  height: 50px;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.menu li {
+  display: inline;
+  padding: 0px 20px;
+  color: aliceblue;
+  font-size: 20px;
+}
+
+h1 {
+  margin: 0px;
+}
+
+#welcome-section {
+  background: #96bb7c;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #c64756;
+  font-size: 45px;
+}
+
+.subtitle {
+  color: aliceblue;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+.projects-section-header {
+  text-align: center;
+  color: aliceblue;
+  font-size: 35px;
+  padding: 50px 0px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.uno,
+.dos,
+.tres,
+.cuatro {
+  background: orange;
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
+}
+
+.projects-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+#mostrar {
+  background: #fad586;
+  padding: 10px 30px;
+  border: 0px;
+  color: #184d47;
+}
+
+#mostrar:hover {
+  background: #96bb7c;
+  color: #c64756;
+}
+
+#contact {
+  height: 350px;
+  background: #c64756;
+}
+
+.contact-link ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes-sociales li {
+  padding: 50px 10px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 35px;
+  color: #96bb7c;
+}
+
+.contact-title{
+    font-size: 35px;
+    text-align: center;
+    color: aliceblue;
+    padding: 50px 0px 0px 0px;
+    
+}
+
+.contact-subtitle{
+    font-size: 16px;
+    color: aliceblue;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.icono{
+    padding: 0px 10px;
+}
+
+.footer-title{
+    text-align: center;
+    color: #c64756;
+    
+}
