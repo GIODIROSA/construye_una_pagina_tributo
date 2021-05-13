@@ -60,7 +60,7 @@ h1 {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
+  grid-gap: 2rem;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -70,11 +70,20 @@ h1 {
 .uno,
 .dos,
 .tres,
-.cuatro {
-  background: orange;
-  height: 200px;
-  width: 200px;
-  margin: 20px auto;
+.cuatro, .cinco, .seis{
+  background: aliceblue;
+  height: 250px;
+  width: 350px;
+  margin: auto;
+  border: 2px solid white;
+  
+}
+
+.caption-contenido{
+  text-align: center;
+  margin: 0;
+  padding: 20px 0px;
+  color: #ff7b54;
 }
 
 .projects-button {
@@ -139,4 +148,14 @@ h1 {
     text-align: center;
     color: #c64756;
     
+}
+
+.anclaje{
+  text-decoration: none;
+  color: white;
+}
+
+.redes{
+  text-decoration: none;
+  color: #96bb7c;
 }
