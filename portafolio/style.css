@@ -79,6 +79,12 @@ h1 {
   
 }
 
+.caja-proyecto:hover{
+  -webkit-box-shadow: 5px 5px 15px 2px #f7a440; 
+box-shadow: 5px 5px 15px 2px #f7a440;
+transition: 2s;
+}
+
 .caption-contenido{
   text-align: center;
   margin: 0;
@@ -117,7 +123,7 @@ h1 {
 }
 
 .redes-sociales li {
-  padding: 50px 10px;
+  padding: 50px 30px;
   text-decoration: none;
   list-style: none;
   font-size: 35px;
@@ -158,4 +164,15 @@ h1 {
 .redes{
   text-decoration: none;
   color: #96bb7c;
+}
+
+.redes-sociales li:hover{
+  transform: scale(1.4) ;
+  -webkit-transform: scale(1.4) ;
+  -moz-transform: scale(1.4) ;
+  transition: 2s;
+}
+
+.link-proyecto{
+  text-decoration: none;
 }
